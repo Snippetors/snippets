@@ -1,0 +1,15 @@
+{
+  "name": "snippets",
+  "version": "0.0.1",
+  "description": "code snippets, copy & run",
+  "repository": "git@github.com:Snippetors/snippets.git",
+  "author": "Snippetors",
+  "license": "CC BY-SA 4.0 & SATA",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
+  "devDependencies": {
+    "vuepress": "^1.8.2"
+  }
+}
