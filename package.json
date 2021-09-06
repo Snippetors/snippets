@@ -5,11 +5,20 @@
   "repository": "git@github.com:Snippetors/snippets.git",
   "author": "Snippetors",
   "license": "CC BY-SA 4.0 & SATA",
+  "engines": {
+    "node": "^14.17.6"
+  },
   "scripts": {
     "dev": "vuepress dev docs",
-    "build": "vuepress build docs"
+    "build": "vuepress build docs",
+    "postinstall": "patch-package"
   },
   "devDependencies": {
-    "vuepress": "^1.8.2"
+    "@vuepress/plugin-back-to-top": "^1.8.2",
+    "node-sass": "^6.0.1",
+    "patch-package": "^6.4.7",
+    "postinstall-postinstall": "^2.1.0",
+    "vuepress": "^1.8.2",
+    "vuepress-plugin-element-tabs": "^0.2.8"
   }
 }
