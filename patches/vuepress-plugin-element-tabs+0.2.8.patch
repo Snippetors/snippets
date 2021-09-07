@@ -1,0 +1,13 @@
+diff --git a/node_modules/vuepress-plugin-element-tabs/lib/markdownItPlugin.js b/node_modules/vuepress-plugin-element-tabs/lib/markdownItPlugin.js
+index b93cf59..9a97a85 100644
+--- a/node_modules/vuepress-plugin-element-tabs/lib/markdownItPlugin.js
++++ b/node_modules/vuepress-plugin-element-tabs/lib/markdownItPlugin.js
+@@ -51,7 +51,7 @@ function getTabAttributes(info) {
+   var arr = info.split(' ');
+   var last = arr.length - 1;
+   if (arr[last].trim() != "lazy") {
+-    return `label="${arr.slice(2,last + 1).join(' ').trim()}"`;
++    return `label="${arr.slice(2,last + 1).join(' ').trim()}" lazy`;
+   }
+   if (arr[last].trim() == "lazy") {
+     return `label="${arr.slice(2,last).join(' ').trim()}" ${arr[last].trim()}`;
