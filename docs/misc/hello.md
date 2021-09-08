@@ -10,13 +10,13 @@
 
 ::: tab java
 
-<<< @/docs/snippets/java/main/Hello.java
+<<< @/docs/snippets/java/src/main/java/Hello.java
 
 :::
 
 ::: tab python
 
-<<< @/docs/snippets/python/main/hello.py
+<<< @/docs/snippets/python/snippets/hello.py
 
 :::
 
