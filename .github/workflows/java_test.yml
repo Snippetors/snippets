@@ -1,0 +1,28 @@
+name: Java Test
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - docs/snippets/java/**
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        java-version: [11]
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up JDK ${{ matrix.java-version }}
+        uses: actions/setup-java@v2
+        with:
+          java-version: ${{ matrix.java-version }}
+          distribution: 'adopt'
+          cache: 'gradle'
+      - name: Test with pytest
+        working-directory: docs/snippets/java
+        run: |
+          gradle test
