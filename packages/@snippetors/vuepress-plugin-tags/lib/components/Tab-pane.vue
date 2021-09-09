@@ -1,0 +1,56 @@
+<template>
+  <div
+    class="el-tab-pane"
+    v-if="eager || loaded || active"
+    v-show="active"
+    role="tabpanel"
+    :aria-hidden="!active"
+    :id="`pane-${paneName}`"
+    :aria-labelledby="`tab-${paneName}`"
+  >
+    <slot></slot>
+  </div>
+</template>
+<script>
+import emitter from "tiny-emitter/instance";
+
+export default {
+  name: "ElTabPane",
+  componentName: "ElTabPane",
+  props: {
+    label: String,
+    labelContent: Function,
+    name: String,
+    closable: Boolean,
+    disabled: Boolean,
+    eager: Boolean,
+  },
+  data() {
+    return {
+      index: null,
+      loaded: false,
+    };
+  },
+  computed: {
+    isClosable() {
+      return this.closable || this.$parent.closable;
+    },
+    active() {
+      const active = this.$parent.currentName === (this.name || this.index);
+      if (active) {
+        this.loaded = true;
+      }
+      return active;
+    },
+    paneName() {
+      return this.name || this.index;
+    },
+  },
+  updated() {
+    emitter.emit("tab-nav-update");
+  },
+  mounted() {
+    emitter.emit("register-tab", this);
+  },
+};
+</script>
