@@ -1,12 +1,12 @@
 {
-  "name": "@snippetors/vuepress-plugin-tags",
+  "name": "@snippetors/vuepress-plugin-tabs",
   "version": "0.0.1",
   "description": "Vuepress plugin - markdown custom container to display content in tabs",
   "keywords": [
     "vuepress-plugin",
     "vuepress",
     "plugin",
-    "tags"
+    "tabs"
   ],
   "main": "lib/index.js",
   "files": [
