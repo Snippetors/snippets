@@ -22,7 +22,5 @@
     "postinstall-postinstall": "^2.1.0",
     "vuepress": "^2.0.0-beta.25"
   },
-  "dependencies": {
-    "tiny-emitter": "^2.1.0"
-  }
+  "dependencies": {}
 }
