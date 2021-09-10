@@ -4,25 +4,25 @@
 
 ::: tab cpp
 
-<<< @/docs/snippets/cpp/main/hello.cpp
+@[code](@snippets/cpp/main/hello.cpp)
 
 :::
 
 ::: tab java
 
-<<< @/docs/snippets/java/src/main/java/Hello.java
+@[code](@snippets/java/src/main/java/Hello.java)
 
 :::
 
 ::: tab python
 
-<<< @/docs/snippets/python/snippets/hello.py
+@[code](@snippets/python/snippets/hello.py)
 
 :::
 
 ::: tab golang
 
-<<< @/docs/snippets/golang/main/hello.go
+@[code](@snippets/golang/main/hello.go)
 
 :::
 

@@ -1,15 +1,24 @@
+const path = require('path');
+
 module.exports = {
-  plugins: [["vuepress-plugin-element-tabs", {}]],
-  markdown: {
-    lineNumbers: true,
-  },
+  lang: "zh-Hans-CN",
   title: "Snippets",
   description: "即抄即用 Copy & Run",
+  plugins: [
+    [require('../../packages/@snippetors/vuepress-plugin-tags'),{}]
+  ],
+  markdown: {
+    importCode: {
+      handleImportPath: (str) =>
+        str.replace(/^@snippets/, path.resolve(__dirname, '../snippets')),
+    },
+  },
   themeConfig: {
     logo: "",
+    logoDark: "",
     repo: "Snippetors/snippets",
     docsDir: "docs",
-    nav: [
+    navbar: [
       { text: "简介", link: "/" },
       { text: "杂项", link: "/misc/hello" },
     ],

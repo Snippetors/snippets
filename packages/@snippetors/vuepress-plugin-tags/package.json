@@ -1,0 +1,29 @@
+{
+  "name": "@snippetors/vuepress-plugin-tags",
+  "version": "0.0.1",
+  "description": "Vuepress plugin - markdown custom container to display content in tabs",
+  "keywords": [
+    "vuepress-plugin",
+    "vuepress",
+    "plugin",
+    "tags"
+  ],
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Snippetors/snippets.git"
+  },
+  "author": "Snippetors",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "resize-observer-polyfill": "^1.5.1",
+    "tiny-emitter": "^2.1.0"
+  },
+  "devDependencies": {}
+}

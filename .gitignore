@@ -508,3 +508,12 @@ fabric.properties
 
 # Android studio 3.1+ serialized cache file
 .idea/caches/build_file_checksums.ser
+
+############
+# Vuepress v2
+# https://v2.vuepress.vuejs.org/zh/guide/getting-started.html#%E6%89%8B%E5%8A%A8%E5%AE%89%E8%A3%85
+############
+node_modules
+.temp
+.cache
+!/packages/**
