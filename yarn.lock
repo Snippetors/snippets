@@ -57,7 +57,7 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@snippetors/vuepress-plugin-tags@./packages/@snippetors/vuepress-plugin-tags":
+"@snippetors/vuepress-plugin-tabs@./packages/@snippetors/vuepress-plugin-tabs":
   version "0.0.1"
   dependencies:
     resize-observer-polyfill "^1.5.1"

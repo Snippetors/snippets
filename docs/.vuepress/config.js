@@ -5,7 +5,7 @@ module.exports = {
   title: "Snippets",
   description: "即抄即用 Copy & Run",
   plugins: [
-    [require('../../packages/@snippetors/vuepress-plugin-tags'),{}]
+    [require('../../packages/@snippetors/vuepress-plugin-tabs'),{}]
   ],
   markdown: {
     importCode: {
