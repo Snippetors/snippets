@@ -17,6 +17,7 @@
     "postinstall": "patch-package"
   },
   "devDependencies": {
+    "@snippetors/vuepress-plugin-tabs": "./packages/@snippetors/vuepress-plugin-tabs",
     "@vuepress/plugin-back-to-top": "^2.0.0-beta.25",
     "patch-package": "^6.4.7",
     "postinstall-postinstall": "^2.1.0",
