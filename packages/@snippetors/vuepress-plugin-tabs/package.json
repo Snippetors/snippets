@@ -1,6 +1,6 @@
 {
   "name": "@snippetors/vuepress-plugin-tabs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Vuepress plugin - markdown custom container to display content in tabs",
   "keywords": [
     "vuepress-plugin",
@@ -34,5 +34,11 @@
   },
   "devDependencies": {
     "release-it": "^14.11.5"
+  },
+  "release-it": {
+    "git": {
+      "commitMessage": "@snippetors/vuepress-plugin-tabs: Release ${version}",
+      "tagName": "plugin-tabs:${version}"
+    }
   }
 }
