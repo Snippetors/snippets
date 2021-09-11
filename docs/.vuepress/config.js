@@ -1,16 +1,14 @@
-const path = require('path');
+const path = require("path");
 
 module.exports = {
   lang: "zh-Hans-CN",
   title: "Snippets",
   description: "即抄即用 Copy & Run",
-  plugins: [
-    [require('../../packages/@snippetors/vuepress-plugin-tabs'),{}]
-  ],
+  plugins: [["@snippetors/vuepress-plugin-tabs", {}]],
   markdown: {
     importCode: {
       handleImportPath: (str) =>
-        str.replace(/^@snippets/, path.resolve(__dirname, '../snippets')),
+        str.replace(/^@snippets/, path.resolve(__dirname, "../snippets")),
     },
   },
   themeConfig: {
