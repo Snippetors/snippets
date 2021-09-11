@@ -186,10 +186,6 @@ export default {
       this.setCurrentName(0);
     }
     emitter.on("tab-nav-update", this.calcPaneInstances.bind(null, true));
-    emitter.on("register-tab", (vnode) => {
-      vnode.index = Object.keys(this.paneLib).length;
-      this.paneLib[vnode.label] = vnode;
-    });
   },
   mounted() {
     this.calcPaneInstances();

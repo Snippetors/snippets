@@ -50,7 +50,8 @@ export default {
     emitter.emit("tab-nav-update");
   },
   mounted() {
-    emitter.emit("register-tab", this);
+    this.index = Object.keys(this.$parent.paneLib).length;
+    this.$parent.paneLib[this.label] = this;
   },
 };
 </script>
