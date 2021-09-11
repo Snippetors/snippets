@@ -38,7 +38,7 @@
   "release-it": {
     "git": {
       "commitMessage": "@snippetors/vuepress-plugin-tabs: Release ${version}",
-      "tagName": "plugin-tabs:${version}"
+      "tagName": "plugin-tabs/${version}"
     }
   }
 }
