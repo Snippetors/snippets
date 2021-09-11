@@ -8,6 +8,9 @@
     "plugin",
     "tabs"
   ],
+  "scripts": {
+    "release": "release-it"
+  },
   "main": "lib/index.js",
   "files": [
     "lib"
@@ -16,6 +19,10 @@
     "type": "git",
     "url": "git+https://github.com/Snippetors/snippets.git"
   },
+  "bugs": {
+    "url": "https://github.com/Snippetors/snippets/labels/plugin%3Atabs"
+  },
+  "homepage": "https://github.com/Snippetors/snippets/plugins/vuepress-plugin-tabs",
   "author": "Snippetors",
   "license": "MIT",
   "publishConfig": {
@@ -25,5 +32,7 @@
     "resize-observer-polyfill": "^1.5.1",
     "tiny-emitter": "^2.1.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "release-it": "^14.11.5"
+  }
 }
