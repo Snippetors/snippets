@@ -22,7 +22,7 @@
   "bugs": {
     "url": "https://github.com/Snippetors/snippets/labels/plugin%3Atabs"
   },
-  "homepage": "https://github.com/Snippetors/snippets/plugins/vuepress-plugin-tabs",
+  "homepage": "https://Snippetors.github.io/snippets/plugins/vuepress-plugin-tabs",
   "author": "Snippetors",
   "license": "MIT",
   "publishConfig": {

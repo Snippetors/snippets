@@ -1,0 +1,30 @@
+# vuepress-plugin-tabs
+
+[![npm](https://badgen.net/npm/v/@snippetors/vuepress-plugin-tabs)](https://www.npmjs.com/package/@snippetors/vuepress-plugin-tabs)
+[![downloads](https://badgen.net/npm/dt/@snippetors/vuepress-plugin-tabs)](https://www.npmjs.com/package/@snippetors/vuepress-plugin-tabs)
+[![license](https://badgen.net/github/license/Snippetors/snippets)](https://github.com/Snippetors/snippets/blob/main/LICENSE)
+
+This plugin is inspired by [vuepress-plugin-element-tabs](https://github.com/superbiger/vuepress-plugin-tabs), but for Vue 3.x and VuePress 2.x
+
+## Documentation
+
+https://Snippetors.github.io/snippets/plugins/vuepress-plugin-tabs
+
+## Install
+
+> This plugin requries [VuePress>=2.0.0](https://github.com/vuepress/vuepress-next)
+
+```sh
+yarn add -D @snippetors/vuepress-plugin-tabs
+```
+
+```js
+// .vuepress/config.js
+module.exports = {
+  plugins: ["@snippetors/vuepress-plugin-tabs"],
+};
+```
+
+## License
+
+[MIT](https://github.com/Snippetors/snippets/blob/main/LICENSE)
