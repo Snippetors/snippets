@@ -1,4 +1,5 @@
 module.exports = {
+  base: "/snippets/",
   lang: "en-US",
   title: "Snippetors' Packages",
   plugins: [["@snippetors/vuepress-plugin-tabs", {}]],

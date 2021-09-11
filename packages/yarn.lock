@@ -58,9 +58,9 @@
     fastq "^1.6.0"
 
 "@snippetors/vuepress-plugin-tabs@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@snippetors/vuepress-plugin-tabs/-/vuepress-plugin-tabs-1.0.3.tgz#0fb4e2140c103ec0fa3811716d3031fcb40e599e"
-  integrity sha512-8HfgUC71K+e79L6G+s3SjuswY4VqsGMqBgpcMIea21QKCzxd417WpBJ3Pt3cCTi5HKvlInLoCuUxiSj4D3I1/g==
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@snippetors/vuepress-plugin-tabs/-/vuepress-plugin-tabs-1.0.4.tgz#1ec0729e2c4dcde68fc3e957aaa990149b9a8a5f"
+  integrity sha512-ma/1MdMdgAYqs3QRdj5tzWwz471zRWhcH3jMBQCG3tXoTqIPePOTcvEbwWkvOCL24dhi0enBvgYVp8BbIBJm8g==
   dependencies:
     resize-observer-polyfill "^1.5.1"
     tiny-emitter "^2.1.0"
