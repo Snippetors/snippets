@@ -1,6 +1,6 @@
 * @LucienZhang
-/packages/** @Snippetors/front_experts
-/docs/snippets/cpp/** @Snippetors/cpp_experts
-/docs/snippets/java/** @Snippetors/java_experts
-/docs/snippets/golang/** @Snippetors/go_experts
-/docs/snippets/python/** @Snippetors/python_experts
+/packages/ @Snippetors/front_experts
+/docs/snippets/cpp/ @Snippetors/cpp_experts
+/docs/snippets/java/ @Snippetors/java_experts
+/docs/snippets/golang/ @Snippetors/go_experts
+/docs/snippets/python/ @Snippetors/python_experts
