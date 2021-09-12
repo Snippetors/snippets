@@ -8,7 +8,7 @@ This plugin is inspired by [vuepress-plugin-element-tabs](https://github.com/sup
 
 ## Documentation
 
-https://Snippetors.github.io/plugins/vuepress-plugin-tabs
+https://snippetors.github.io/plugins/vuepress-plugin-tabs
 
 ## Install
 
