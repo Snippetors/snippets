@@ -10,19 +10,19 @@
 
 ::: tab java
 
-@[code](@snippets/java/src/main/java/Hello.java)
+@[code{3-7}](@snippets/java/src/main/java/snippets/misc/Hello.java)
 
 :::
 
 ::: tab python
 
-@[code](@snippets/python/snippets/hello.py)
+@[code](@snippets/python/snippets/misc/hello.py)
 
 :::
 
 ::: tab golang
 
-@[code](@snippets/golang/main/hello.go)
+@[code{5-8}](@snippets/golang/misc/hello.go)
 
 :::
 

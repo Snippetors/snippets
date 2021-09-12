@@ -1,4 +1,4 @@
-from snippets import hello
+from snippets.misc import hello
 
 def test_hello():
     assert True

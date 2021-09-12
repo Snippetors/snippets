@@ -1,7 +1,8 @@
-package main
+package misc
 
 import "fmt"
 
-func main() {
+func Hello() error {
 	fmt.Println("Hello Snippets!")
+	return nil
 }
