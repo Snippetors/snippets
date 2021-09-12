@@ -20,9 +20,9 @@
 
 :::
 
-::: tab golang
+::: tab go
 
-@[code{5-8}](@snippets/golang/misc/hello.go)
+@[code{5-8}](@snippets/go/misc/hello.go)
 
 :::
 
