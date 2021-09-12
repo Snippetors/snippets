@@ -1,1 +1,2 @@
-print('Hello Snippets!')
+def hello():
+    print('Hello Snippets!')
