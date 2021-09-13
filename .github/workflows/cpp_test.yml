@@ -1,0 +1,34 @@
+name: Cpp Test
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - docs/snippets/cpp/**
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        cpp-version: [""]
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'
+      - name: Install python dependencies
+        working-directory: docs/snippets/cpp
+        run: pip install cpplint
+      - name: Lint
+        working-directory: docs/snippets/cpp
+        run: cpplint --recursive --filter=-legal/copyright,-build/namespaces .
+      # - name: Set up Cpp ${{ matrix.cpp-version }}
+      #   uses: actions/setup-cpp@v2 # this doesn't exist
+      #   with:
+      #     cpp-version: ${{ matrix.cpp-version }}
+      # - name: Test
+      #   working-directory: docs/snippets/cpp
+      #   run: echo good
