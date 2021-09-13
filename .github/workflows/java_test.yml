@@ -22,7 +22,9 @@ jobs:
           java-version: ${{ matrix.java-version }}
           distribution: 'adopt'
           cache: 'gradle'
+      - name: Lint
+        working-directory: docs/snippets/java
+        run: gradle check
       - name: Test
         working-directory: docs/snippets/java
-        run: |
-          gradle test
+        run: gradle test
