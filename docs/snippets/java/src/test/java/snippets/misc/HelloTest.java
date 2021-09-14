@@ -9,6 +9,7 @@ public class HelloTest {
 
     @Test
     void helloTest() {
+        Hello.hello();
         Assertions.assertNull(hello);
     }
 }
