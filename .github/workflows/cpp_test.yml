@@ -24,11 +24,10 @@ jobs:
         run: pip install cpplint
       - name: Lint
         working-directory: docs/snippets/cpp
-        run: cpplint --recursive --filter=-legal/copyright,-build/namespaces .
-      # - name: Set up Cpp ${{ matrix.cpp-version }}
-      #   uses: actions/setup-cpp@v2 # this doesn't exist
-      #   with:
-      #     cpp-version: ${{ matrix.cpp-version }}
-      # - name: Test
-      #   working-directory: docs/snippets/cpp
-      #   run: echo good
+        run: cpplint --recursive --filter=-legal/copyright,-build/namespaces --root=. .
+      - name: Test
+        working-directory: docs/snippets/cpp
+        run: |
+          cmake -S . -B build
+          cmake --build build
+          cd build/test && ctest

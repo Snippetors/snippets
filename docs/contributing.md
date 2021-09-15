@@ -51,3 +51,17 @@ git push --set-upstream origin feature_branch
 7. 建立Pull Request
 8. GitHub Action 应该会自动跑起来，当检查失败时，请检查失败的原因（Test失败，或者代码格式不符）
 9. 当相应的代码审查者批准Pull Request后，你的分支将自动合并
+
+## 测试框架
+
+1. C++ 使用[GoogleTest](https://github.com/google/googletest)
+1. Java 使用[JUnit 5](https://junit.org/junit5/)
+1. Python 使用[Pytest](https://docs.pytest.org/)
+1. Go 使用[内置测试模块](https://pkg.go.dev/testing)
+
+## 代码风格检查
+
+1. C++ 使用[cpplint](https://github.com/cpplint/cpplint)
+1. Java 使用[checkstyle](https://github.com/checkstyle/checkstyle)，风格在Google风格上略有改动，详情请见[配置文件](snippets/java/config/checkstyle/checkstyle.xml)
+1. Python 使用[flake8](https://flake8.pycqa.org/en/latest/)
+1. Go 使用[内置检查模块](https://pkg.go.dev/cmd/vet)
