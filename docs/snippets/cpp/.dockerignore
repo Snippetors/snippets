@@ -114,6 +114,8 @@ $RECYCLE.BIN/
 *.out
 *.app
 
+build/
+
 ############
 # VSCode
 # https://github.com/github/gitignore/blob/master/Global/VisualStudioCode.gitignore

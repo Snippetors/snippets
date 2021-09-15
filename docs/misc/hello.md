@@ -4,7 +4,7 @@
 
 ::: tab cpp
 
-@[code](@snippets/cpp/main/hello.cpp)
+@[code{4-10} cpp](@snippets/cpp/src/misc/hello.hpp)
 
 :::
 

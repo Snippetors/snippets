@@ -1,4 +1,8 @@
 {
+  "private": true,
+  "workspaces": [
+    "packages/@snippetors/*"
+  ],
   "name": "snippets",
   "version": "0.0.1",
   "description": "code snippets, copy & run",
