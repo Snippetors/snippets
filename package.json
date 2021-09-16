@@ -22,6 +22,7 @@
   },
   "devDependencies": {
     "@vuepress/plugin-back-to-top": "^2.0.0-beta.25",
+    "markdown-it-pangu": "^1.0.2",
     "patch-package": "^6.4.7",
     "postinstall-postinstall": "^2.1.0",
     "vuepress": "^2.0.0-beta.25"

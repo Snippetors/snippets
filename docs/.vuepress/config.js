@@ -11,6 +11,9 @@ module.exports = {
         str.replace(/^@snippets/, path.resolve(__dirname, "../snippets")),
     },
   },
+  extendsMarkdown: (md) => {
+    md.use(require("markdown-it-pangu"));
+  },
   themeConfig: {
     logo: "",
     logoDark: "",
