@@ -4,26 +4,7 @@ module.exports = {
   lang: "zh-Hans-CN",
   title: "Snippets",
   description: "即抄即用 Copy & Run",
-  plugins: [
-    [
-      (() => {
-        let res = path
-          .resolve(__dirname, "../../packages/@snippetors/vuepress-plugin-tabs")
-          .split(path.sep)
-          .join("/");
-        console.log(
-          "the path is",
-          res,
-          path.resolve(
-            __dirname,
-            "../../packages/@snippetors/vuepress-plugin-tabs"
-          )
-        );
-        return res;
-      })(),
-      {},
-    ],
-  ],
+  plugins: [[require("../../packages/@snippetors/vuepress-plugin-tabs"), {}]],
   markdown: {
     importCode: {
       handleImportPath: (str) =>

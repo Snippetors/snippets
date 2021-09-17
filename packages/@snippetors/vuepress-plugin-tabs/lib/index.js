@@ -1,4 +1,4 @@
-const path = require("path");
+const { path } = require("@vuepress/utils");
 
 module.exports = (options, app) => ({
   name: "@snippetors/vuepress-plugin-tabs",
