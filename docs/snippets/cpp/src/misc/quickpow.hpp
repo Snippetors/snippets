@@ -11,10 +11,10 @@ ll quickpow(ll x, ll n) {
     while (n) {
         if (n & 1 == 1) {
             res *= x;
-    	    res %= M;
+            res %= M;
         }
-	x = (x * x) % M;
-	n /= 2;
+        x = (x * x) % M;
+        n /= 2;
     }
     return res;
 }
