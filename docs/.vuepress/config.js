@@ -4,6 +4,7 @@ module.exports = {
   lang: "zh-Hans-CN",
   title: "Snippets",
   description: "即抄即用 Copy & Run",
+  head: [["link", { rel: "icon", href: "/images/hero.svg" }]],
   plugins: [[require("../../packages/@snippetors/vuepress-plugin-tabs"), {}]],
   markdown: {
     importCode: {
@@ -15,8 +16,7 @@ module.exports = {
     md.use(require("markdown-it-pangu"));
   },
   themeConfig: {
-    logo: "",
-    logoDark: "",
+    logo: "/images/hero.svg",
     repo: "Snippetors/snippets",
     docsDir: "docs",
     navbar: [
