@@ -3,7 +3,7 @@
 
 #include <iostream>
 using namespace std;
-using ll = long long;
+using ll = int64_t;
 ll M = 1e9 + 7;
 
 ll quickpow(ll x, ll n) {
@@ -20,4 +20,4 @@ ll quickpow(ll x, ll n) {
 }
 
 
-#endif
+#endif  // SRC_MISC_QUICKPOW_HPP_
