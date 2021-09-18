@@ -71,7 +71,7 @@ module.exports = {
       "/math/": [
         {
           title: "数学",
-          children: ["/math/"],
+          children: ["/math/", "/math/fastpow"],
         },
       ],
       "/graph/": [
