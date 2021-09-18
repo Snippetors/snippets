@@ -1,3 +1,5 @@
+[![Snippets Logo](docs/.vuepress/public/images/hero.svg)](http://snippets.ink/)
+
 # snippets
 
 code snippets, copy &amp; run
