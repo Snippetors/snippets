@@ -8,14 +8,14 @@ using namespace std;
 
 class Trie {
  private:
-	Trie* next[26];
-	bool isEnd;
+    Trie* next[26];
+    bool isEnd;
 
  public:
     Trie() {
         for (int i = 0; i < 26; ++i) { next[i] = nullptr; }
         isEnd = false;
-	}
+    }
     void insert(const string& s) {  // insert new word
         Trie* curr = this;
         for (const auto& ch : s) {
@@ -43,6 +43,5 @@ class Trie {
         return true;
     }
 };
-
 
 #endif  //  SRC_DATA_STRUCTURE_TRIE_HPP_
