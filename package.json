@@ -18,7 +18,8 @@
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
-    "postinstall": "patch-package"
+    "postinstall": "patch-package",
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md"
   },
   "devDependencies": {
     "@vuepress/plugin-back-to-top": "^2.0.0-beta.25",
