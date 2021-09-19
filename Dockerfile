@@ -4,6 +4,9 @@ COPY . .
 RUN apk add --no-cache git && yarn install --silent && yarn build
 
 FROM nginx:stable-alpine
+
+LABEL maintainer="Snippetors"
+
 COPY --from=builder /app/docs/.vuepress/dist /usr/share/nginx/html
 COPY nginx.conf /etc/nginx/nginx.conf
 
