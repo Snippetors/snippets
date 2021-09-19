@@ -4,7 +4,7 @@
 
 ::: tab cpp
 
-@[code{4-50} cpp](@snippets/cpp/src/data_structure/trie.hpp)
+@[code{4-45} cpp](@snippets/cpp/src/data_structure/trie.hpp)
 
 :::
 
