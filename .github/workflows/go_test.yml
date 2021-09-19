@@ -6,6 +6,10 @@ on:
       - main
     paths:
       - docs/snippets/go/**
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
 
 jobs:
   test:

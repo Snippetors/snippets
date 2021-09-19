@@ -6,6 +6,10 @@ on:
       - main
     paths:
       - docs/snippets/java/**
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
 
 jobs:
   test:
@@ -20,8 +24,8 @@ jobs:
         uses: actions/setup-java@v2
         with:
           java-version: ${{ matrix.java-version }}
-          distribution: 'adopt'
-          cache: 'gradle'
+          distribution: "adopt"
+          cache: "gradle"
       - name: Lint
         working-directory: docs/snippets/java
         run: gradle check

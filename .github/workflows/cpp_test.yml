@@ -6,6 +6,10 @@ on:
       - main
     paths:
       - docs/snippets/cpp/**
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
 
 jobs:
   test:
