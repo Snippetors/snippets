@@ -1,3 +1,12 @@
+## [0.0.5](https://github.com/Snippetors/snippets/compare/v0.0.4...v0.0.5) (2021-09-19)
+
+
+### Bug Fixes
+
+* **build:** fix docker label and action (close [#36](https://github.com/Snippetors/snippets/issues/36)) ([f8b6dda](https://github.com/Snippetors/snippets/commit/f8b6dda0d4a19d6c780dda0000ca6136778a6b31))
+
+
+
 ## [0.0.4](https://github.com/Snippetors/snippets/compare/v0.0.3...v0.0.4) (2021-09-19)
 
 
