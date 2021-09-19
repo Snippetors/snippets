@@ -25,7 +25,7 @@ jobs:
       - name: Log in to GitHub Docker Registry
         uses: docker/login-action@v1
         with:
-          registry: docker.pkg.github.com
+          registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
       - name: Build container image for pushed tag
@@ -34,12 +34,12 @@ jobs:
         with:
           push: true
           tags: |
-            docker.pkg.github.com/${{ github.repository }}/snippets:${GITHUB_REF##*/}
-            docker.pkg.github.com/${{ github.repository }}/snippets:latest
+            ghcr.io/snippetors/snippets:${GITHUB_REF##*/}
+            ghcr.io/snippetors/snippets:latest
       - name: Build container image for workflow_dispatch
         uses: docker/build-push-action@v2
         if: ${{ github.event_name == 'workflow_dispatch' }}
         with:
           push: true
           tags: |
-            docker.pkg.github.com/${{ github.repository }}/snippets:${{ github.event.inputs.tag }}
+            ghcr.io/snippetors/snippets:${{ github.event.inputs.tag }}
