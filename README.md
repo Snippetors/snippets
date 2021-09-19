@@ -8,9 +8,9 @@ code snippets, copy &amp; run
 [![Build](https://github.com/Snippetors/snippets/actions/workflows/build.yml/badge.svg?branch=v0.0.2)](https://github.com/Snippetors/snippets/blob/main/.github/workflows/build.yml)
 [![Website](https://img.shields.io/website?up_message=online&url=http%3A%2F%2Fsnippets.ink)](http://snippets/ink)
 [![GitHub package.json version](https://img.shields.io/github/package-json/v/Snippetors/snippets?color=blue)](https://github.com/Snippetors/snippets)
+[![GitHub](https://img.shields.io/github/license/Snippetors/snippets)](https://github.com/Snippetors/snippets/blob/main/LICENSE)
 [![GitHub watchers](https://img.shields.io/github/watchers/Snippetors/snippets?style=social)](https://github.com/Snippetors/snippets)
 [![GitHub Repo stars](https://img.shields.io/github/stars/Snippetors/snippets?style=social)](https://github.com/Snippetors/snippets)
-[![GitHub](https://img.shields.io/github/license/Snippetors/snippets)](https://github.com/Snippetors/snippets/blob/main/LICENSE)
 
 ## 状态检查
 

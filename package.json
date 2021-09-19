@@ -19,7 +19,8 @@
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
     "postinstall": "patch-package",
-    "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md"
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md && sed -i '' -E \"s/(badge\\.svg\\?branch=)[^\\)]*/\\1v$npm_package_version/g\" README.md && git add README.md",
+    "postversion": "echo \"git push && git push v$npm_package_version\""
   },
   "devDependencies": {
     "@vuepress/plugin-back-to-top": "^2.0.0-beta.25",
