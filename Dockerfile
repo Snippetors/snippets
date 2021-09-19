@@ -1,7 +1,7 @@
 FROM node:14.17.6-alpine as builder
 WORKDIR /app
 COPY . .
-RUN yarn install --silent && yarn build
+RUN apk add --no-cache git && yarn install --silent && yarn build
 
 FROM nginx:stable-alpine
 COPY --from=builder /app/docs/.vuepress/dist /usr/share/nginx/html

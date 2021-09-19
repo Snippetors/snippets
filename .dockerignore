@@ -1,7 +1,8 @@
 ###################
 # Docker Ignore
 ###################
-.git
+# git is used by @vuepress/plugin-git
+# .git
 Dockerfile
 .gitignore
 .dockerignore
