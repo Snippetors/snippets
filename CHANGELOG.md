@@ -1,3 +1,12 @@
+## [0.0.3](https://github.com/Snippetors/snippets/compare/v0.0.2...v0.0.3) (2021-09-19)
+
+
+### Features
+
+* **ci:** action to release to GH packages (close [#35](https://github.com/Snippetors/snippets/issues/35)) ([1a56a37](https://github.com/Snippetors/snippets/commit/1a56a37d0a00099cba84aa14a82c6cb0c80f22ed))
+
+
+
 ## [0.0.2](https://github.com/Snippetors/snippets/compare/v1.0.0...v0.0.2) (2021-09-19)
 
 
