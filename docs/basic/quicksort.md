@@ -4,7 +4,7 @@
 
 ::: tab cpp
 
-@[code{4-30} cpp](@snippets/cpp/src/basic/quicksort.hpp)
+@[code{4-29} cpp](@snippets/cpp/src/basic/quicksort.hpp)
 
 :::
 
