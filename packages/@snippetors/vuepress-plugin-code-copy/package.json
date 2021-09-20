@@ -1,0 +1,39 @@
+{
+  "name": "@snippetors/vuepress-plugin-code-copy",
+  "version": "1.0.0",
+  "description": "Vuepress plugin - a button to copy code block",
+  "keywords": [
+    "vuepress-plugin",
+    "vuepress",
+    "plugin",
+    "code-copy",
+    "copy",
+    "clipboard"
+  ],
+  "scripts": {
+    "release": "release-it"
+  },
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Snippetors/snippets.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Snippetors/snippets/labels/plugin%3Acode-copy"
+  },
+  "homepage": "https://snippetors.github.io/plugins/vuepress-plugin-code-copy",
+  "author": "Snippetors",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "release-it": {
+    "git": {
+      "commitMessage": "@snippetors/vuepress-plugin-code-copy: Release ${version}",
+      "tagName": "plugin-code-copy/${version}"
+    }
+  }
+}

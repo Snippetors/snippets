@@ -5,7 +5,17 @@ module.exports = {
   title: "Snippets",
   description: "即抄即用 Copy & Run",
   head: [["link", { rel: "icon", href: "/images/hero.svg" }]],
-  plugins: [[require("../../packages/@snippetors/vuepress-plugin-tabs"), {}]],
+  plugins: [
+    [require("../../packages/@snippetors/vuepress-plugin-tabs"), {}],
+    [
+      require("../../packages/@snippetors/vuepress-plugin-code-copy"),
+      {
+        color: "#757575",
+        staticIcon: true,
+        backgroundTransition: false,
+      },
+    ],
+  ],
   markdown: {
     importCode: {
       handleImportPath: (str) =>
