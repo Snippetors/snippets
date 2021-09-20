@@ -1,30 +1,35 @@
 const container = require("markdown-it-container");
 
-module.exports = function tabsPlugin(md, app) {
-  md.use(container, "tabs", {
-    render: (tokens, idx) => {
-      const token = tokens[idx];
-      const attributes = getTabsAttributes(token.info);
-      if (token.nesting === 1) {
-        return `<Tabs ${attributes}>\n`;
-      } else {
-        return `</Tabs>\n`;
-      }
-    },
-  });
+module.exports = (options) => {
+  const events = options.events || [];
+  const eventsAttr = "[" + events.map((e) => `'${e}'`).join(",") + "]";
+  const tabsPlugin = (md, app) => {
+    md.use(container, "tabs", {
+      render: (tokens, idx) => {
+        const token = tokens[idx];
+        const attributes = getTabsAttributes(token.info);
+        if (token.nesting === 1) {
+          return `<Tabs ${attributes} :events="${eventsAttr}">\n`;
+        } else {
+          return `</Tabs>\n`;
+        }
+      },
+    });
 
-  md.use(container, "tab", {
-    render: (tokens, idx) => {
-      const token = tokens[idx];
-      const attributes = getTabAttributes(token.info);
+    md.use(container, "tab", {
+      render: (tokens, idx) => {
+        const token = tokens[idx];
+        const attributes = getTabAttributes(token.info);
 
-      if (token.nesting === 1) {
-        return `<Tab ${attributes}>\n`;
-      } else {
-        return `</Tab>\n`;
-      }
-    },
-  });
+        if (token.nesting === 1) {
+          return `<Tab ${attributes}>\n`;
+        } else {
+          return `</Tab>\n`;
+        }
+      },
+    });
+  };
+  return tabsPlugin;
 };
 
 function getTabsAttributes(info) {

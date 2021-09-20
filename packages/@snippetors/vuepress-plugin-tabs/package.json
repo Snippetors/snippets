@@ -29,8 +29,7 @@
     "access": "public"
   },
   "dependencies": {
-    "resize-observer-polyfill": "^1.5.1",
-    "tiny-emitter": "^2.1.0"
+    "resize-observer-polyfill": "^1.5.1"
   },
   "devDependencies": {
     "release-it": "^14.11.5"

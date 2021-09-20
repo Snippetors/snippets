@@ -6,7 +6,10 @@ module.exports = {
   description: "即抄即用 Copy & Run",
   head: [["link", { rel: "icon", href: "/images/hero.svg" }]],
   plugins: [
-    [require("../../packages/@snippetors/vuepress-plugin-tabs"), {}],
+    [
+      require("../../packages/@snippetors/vuepress-plugin-tabs"),
+      { events: ["snippetors-vuepress-plugin-code-copy-update-event"] },
+    ],
     [
       require("../../packages/@snippetors/vuepress-plugin-code-copy"),
       {
@@ -51,7 +54,7 @@ module.exports = {
       "/basic/": [
         {
           title: "基础算法",
-          children: ["/basic/","/basic/quicksort"],
+          children: ["/basic/", "/basic/quicksort"],
         },
       ],
       "/data_structure/": [

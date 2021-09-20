@@ -83,7 +83,7 @@ export default {
   inject: ["rootTabs"],
   props: {
     panes: Array,
-    currentName: String,
+    currentName: [String, Number],
     editable: Boolean,
     onTabClick: {
       type: Function,

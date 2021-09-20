@@ -9,5 +9,5 @@ module.exports = (options, app) => ({
       includePath: ["./theme/tabs.scss"],
     },
   },
-  extendsMarkdown: require("./markdownItPlugin"),
+  extendsMarkdown: require("./markdownItPlugin")(options),
 });

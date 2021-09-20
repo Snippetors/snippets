@@ -63,7 +63,6 @@
 
 <script>
 import TabNav from "./Tab-nav.vue";
-import emitter from "tiny-emitter/instance";
 
 export default {
   name: "ElTabs",
@@ -86,6 +85,7 @@ export default {
     },
     beforeLeave: Function,
     stretch: Boolean,
+    events: Array,
   },
   provide() {
     return {
@@ -185,13 +185,16 @@ export default {
     if (!this.currentName) {
       this.setCurrentName(0);
     }
-    emitter.on("tab-nav-update", this.calcPaneInstances.bind(null, true));
   },
   mounted() {
     this.calcPaneInstances();
   },
   updated() {
     this.calcPaneInstances();
+
+    for (const e of this.events) {
+      window.dispatchEvent(new Event(e));
+    }
   },
 };
 </script>

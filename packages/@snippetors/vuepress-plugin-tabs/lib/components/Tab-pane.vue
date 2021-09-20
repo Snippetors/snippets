@@ -12,8 +12,6 @@
   </div>
 </template>
 <script>
-import emitter from "tiny-emitter/instance";
-
 export default {
   name: "ElTabPane",
   componentName: "ElTabPane",
@@ -47,7 +45,7 @@ export default {
     },
   },
   updated() {
-    emitter.emit("tab-nav-update");
+    this.$parent.calcPaneInstances.bind(null, true)();
   },
   mounted() {
     this.index = Object.keys(this.$parent.paneLib).length;
