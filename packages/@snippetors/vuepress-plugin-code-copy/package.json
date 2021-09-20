@@ -1,6 +1,6 @@
 {
   "name": "@snippetors/vuepress-plugin-code-copy",
-  "version": "1.0.6",
+  "version": "0.0.1",
   "description": "Vuepress plugin - a button to copy code block",
   "keywords": [
     "vuepress-plugin",
