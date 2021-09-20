@@ -1,9 +1,12 @@
-import { createApp, onUpdated, onMounted } from "vue";
+import { createApp, onUpdated, onMounted, onBeforeUnmount, watch } from "vue";
+import { usePageData } from "@vuepress/client";
 import CodeCopy from "./components/CodeCopy.vue";
 import { defineClientAppSetup } from "@vuepress/client";
 import "./theme/style.css";
 
 export default defineClientAppSetup(() => {
+  const page = usePageData();
+
   const update = () => {
     setTimeout(() => {
       document.querySelectorAll(selector).forEach((el) => {
@@ -31,8 +34,26 @@ export default defineClientAppSetup(() => {
     }, 100);
   };
 
-  onMounted(update);
-  onUpdated(update);
+  onMounted(() => {
+    update();
+    window.addEventListener(
+      "snippetors-vuepress-plugin-code-copy-update-event",
+      update
+    );
+  });
+
+  onBeforeUnmount(() => {
+    window.removeEventListener(
+      "snippetors-vuepress-plugin-code-copy-update-event",
+      update
+    );
+  });
+
+  onUpdated(() => {
+    update();
+  });
+
+  watch(() => page.value.path, update);
 
   return update;
 });

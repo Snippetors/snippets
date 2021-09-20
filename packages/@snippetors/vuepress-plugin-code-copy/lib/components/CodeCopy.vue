@@ -26,6 +26,7 @@
 
 <script>
 export default {
+  name: "CodeCopy",
   props: {
     parent: Object,
     code: String,
