@@ -19,8 +19,8 @@ int partition(vector<int>& nums, int left, int right) {
     return pos;
 }
 
-void quicksort(vector<int>& nums, int left, int right) {  
-    //closed interval [left, right] 
+void quicksort(vector<int>& nums, int left, int right) {
+    // closed interval [left, right]
     if (left < right) {
         int pos = partition(nums, left, right);
         quicksort(nums, left, pos - 1);

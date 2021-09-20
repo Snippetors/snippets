@@ -4,7 +4,7 @@
 
 
 TEST(QuicksortTest, BasicAssertions) {
-    vector<int> v = { 4,3,2,7,-1,-4,9 };
+    vector<int> v = { 4, 3, 2, 7, -1, -4, 9 };
     quicksort(v, 0, 4);
 
     EXPECT_EQ(v[0], -1);
