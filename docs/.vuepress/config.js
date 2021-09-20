@@ -51,7 +51,7 @@ module.exports = {
       "/basic/": [
         {
           title: "基础算法",
-          children: ["/basic/","basic/quicksort"],
+          children: ["/basic/","/basic/quicksort"],
         },
       ],
       "/data_structure/": [
