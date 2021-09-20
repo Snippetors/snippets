@@ -2,9 +2,9 @@
 
 # snippets
 
-code snippets, copy &amp; run
-
 [snippets.ink](http://snippets.ink)
+
+code snippets, copy &amp; run
 
 [![VuePress Check](https://github.com/Snippetors/snippets/actions/workflows/vuepress_check.yml/badge.svg?branch=v0.0.6)](https://github.com/Snippetors/snippets/blob/main/.github/workflows/vuepress_check.yml)
 [![Build](https://github.com/Snippetors/snippets/actions/workflows/build.yml/badge.svg?branch=v0.0.6)](https://github.com/Snippetors/snippets/blob/main/.github/workflows/build.yml)
