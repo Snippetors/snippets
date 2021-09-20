@@ -1,3 +1,13 @@
+# [0.1.0](https://github.com/Snippetors/snippets/compare/v0.0.6...v0.1.0) (2021-09-20)
+
+
+### Features
+
+* **plugin:code-copy:** listen to event ([f771b7d](https://github.com/Snippetors/snippets/commit/f771b7d7293734bd2bae63d520136b2e6798846f))
+* **plugin:tabs:** add events & optimization (close [#42](https://github.com/Snippetors/snippets/issues/42), [#43](https://github.com/Snippetors/snippets/issues/43)) ([ef415fc](https://github.com/Snippetors/snippets/commit/ef415fc517c11361a6017473487c32904b31507d))
+
+
+
 ## [0.0.6](https://github.com/Snippetors/snippets/compare/v0.0.5...v0.0.6) (2021-09-20)
 
 
