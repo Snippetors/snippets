@@ -23,8 +23,9 @@ code snippets, copy &amp; run
 
 ## 插件
 
-- [@snippetors/vuepress-plugin-tabs](packages/@snippetors/vuepress-plugin-tabs)
+- [@snippetors/vuepress-plugin-tabs](https://github.com/Snippetors/snippets/blob/main/packages/@snippetors/vuepress-plugin-tabs)
+- [@snippetors/vuepress-plugin-code-copy](https://github.com/Snippetors/snippets/blob/main/packages/@snippetors/vuepress-plugin-code-copy)
 
 ## 如何贡献代码
 
-- [贡献指南](docs/contributing.md)
+- [贡献指南](https://github.com/Snippetors/snippets/blob/main/docs/contributing.md)
