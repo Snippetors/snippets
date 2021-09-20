@@ -8,7 +8,7 @@ TEST(QuicksortTest, BasicAssertions) {
     quicksort(v, 0, 4);
 
     EXPECT_EQ(v[0], -1);
-    EXPECT_QE(v[4], 7);
+    EXPECT_EQ(v[4], 7);
 
     quicksort(v, 0, 6);
     EXPECT_EQ(v[0], -4);
