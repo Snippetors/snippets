@@ -12,5 +12,5 @@ TEST(QuicksortTest, BasicAssertions) {
 
     quicksort(v, 0, 6);
     EXPECT_EQ(v[0], -4);
-    EXPECT)EQ(v[6], 9);
+    EXPECT_EQ(v[6], 9);
 }
