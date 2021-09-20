@@ -1,3 +1,25 @@
+## [0.0.5](https://github.com/Snippetors/snippets/compare/v0.0.4...v0.0.5) (2021-09-19)
+
+
+### Bug Fixes
+
+* **build:** fix docker label and action (close [#36](https://github.com/Snippetors/snippets/issues/36)) ([f8b6dda](https://github.com/Snippetors/snippets/commit/f8b6dda0d4a19d6c780dda0000ca6136778a6b31))
+
+
+
+## [0.0.4](https://github.com/Snippetors/snippets/compare/v0.0.3...v0.0.4) (2021-09-19)
+
+
+
+## [0.0.3](https://github.com/Snippetors/snippets/compare/v0.0.2...v0.0.3) (2021-09-19)
+
+
+### Features
+
+* **ci:** action to release to GH packages (close [#35](https://github.com/Snippetors/snippets/issues/35)) ([1a56a37](https://github.com/Snippetors/snippets/commit/1a56a37d0a00099cba84aa14a82c6cb0c80f22ed))
+
+
+
 ## [0.0.2](https://github.com/Snippetors/snippets/compare/v1.0.0...v0.0.2) (2021-09-19)
 
 
