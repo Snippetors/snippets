@@ -1,3 +1,12 @@
+## [0.0.6](https://github.com/Snippetors/snippets/compare/v0.0.5...v0.0.6) (2021-09-20)
+
+
+### Features
+
+* **plugin:code-copy:** add code-copy plugin (close [#8](https://github.com/Snippetors/snippets/issues/8)) ([3411f7a](https://github.com/Snippetors/snippets/commit/3411f7a8840493d6ff94b83e53a60e62d71eb111))
+
+
+
 ## [0.0.5](https://github.com/Snippetors/snippets/compare/v0.0.4...v0.0.5) (2021-09-19)
 
 
