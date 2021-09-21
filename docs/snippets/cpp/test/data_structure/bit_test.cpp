@@ -14,6 +14,6 @@ TEST(BitTest, BasicAssertions) {
     tree->updateDelta(4, 5);
 
     EXPECT_EQ(tree->sumRange(0, 2), 12);
-    EXPECT_EQ(tree->sumRange(2, 4), 17);
+    EXPECT_EQ(tree->sumRange(2, 4), 11);
     EXPECT_EQ(tree->sumRange(0, 0), 4);
 }
