@@ -15,7 +15,7 @@ class BIT {
 
  public:
     // initialize object with given nums array
-    BIT(const vector<int>& nums) {
+    explicit BIT(const vector<int>& nums) {
         int n = nums.size();
         this->bitArr.resize(n + 1, 0);
         this->nums.resize(n + 1, 0);
