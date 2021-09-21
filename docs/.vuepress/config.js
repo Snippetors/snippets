@@ -60,7 +60,7 @@ module.exports = {
       "/data_structure/": [
         {
           title: "数据结构",
-          children: ["/data_structure/", "/data_structure/trie"],
+          children: ["/data_structure/", "/data_structure/trie","/data_structure/bit"],
         },
       ],
       "/search/": [
