@@ -8,6 +8,7 @@
 
 using namespace std;
 using itr = vector<pair<int, int>>::iterator;
+void mergeSortHelper(itr left, itr right);
 
 // recursive
 void mergeSort(vector<int>& nums) {
