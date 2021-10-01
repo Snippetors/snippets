@@ -4,7 +4,7 @@
 
 ::: tab cpp
 
-@[code{4-26} cpp](@snippets/cpp/src/basic/mergesort.hpp)
+@[code{4-27} cpp](@snippets/cpp/src/basic/mergesort.hpp)
 
 :::
 
