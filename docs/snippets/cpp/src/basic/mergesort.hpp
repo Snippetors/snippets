@@ -7,7 +7,7 @@
 #include <utility>
 
 using namespace std;
-using itr = vector<pair<int, int>>::iterator;
+using itr = vector<int>::iterator;
 void mergeSortHelper(itr left, itr right);
 
 // recursive
