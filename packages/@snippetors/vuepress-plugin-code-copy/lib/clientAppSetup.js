@@ -9,28 +9,31 @@ export default defineClientAppSetup(() => {
 
   const update = () => {
     setTimeout(() => {
-      document.querySelectorAll(selector).forEach((el) => {
-        if (el.classList.contains("code-copy-added")) return;
-        let options = {
-          align: align,
-          color: color,
-          backgroundTransition: backgroundTransition,
-          backgroundColor: backgroundColor,
-          successText: successText,
-          successTextColor: successTextColor,
-          staticIcon: staticIcon,
-        };
-        let instance = createApp(CodeCopy, {
-          parent: el,
-          code: el.querySelector("pre").innerText,
-          options: options,
-        });
-        let childEl = document.createElement("div");
-        el.appendChild(childEl);
-        instance.mount(childEl);
+      document
+        .querySelectorAll(snippetorsCodeCopyOptions.selector)
+        .forEach((el) => {
+          if (el.classList.contains("code-copy-added")) return;
+          let options = {
+            align: snippetorsCodeCopyOptions.align,
+            color: snippetorsCodeCopyOptions.color,
+            backgroundTransition:
+              snippetorsCodeCopyOptions.backgroundTransition,
+            backgroundColor: snippetorsCodeCopyOptions.backgroundColor,
+            successText: snippetorsCodeCopyOptions.successText,
+            successTextColor: snippetorsCodeCopyOptions.successTextColor,
+            staticIcon: snippetorsCodeCopyOptions.staticIcon,
+          };
+          let instance = createApp(CodeCopy, {
+            parent: el,
+            code: el.querySelector("pre").innerText,
+            options: options,
+          });
+          let childEl = document.createElement("div");
+          el.appendChild(childEl);
+          instance.mount(childEl);
 
-        el.classList.add("code-copy-added");
-      });
+          el.classList.add("code-copy-added");
+        });
     }, 100);
   };
 
