@@ -48,3 +48,12 @@ jobs:
 
       - name: Build
         run: yarn build
+
+      - name: Replace vuepress by vuepress-vite
+        run: |
+          yarn remove -W vuepress
+          yarn add -D -W vuepress-vite@next
+      - name: Build by Vite
+        run:
+          yarn build
+
