@@ -25,6 +25,7 @@ class UnionFind {
          return root[i] = find(root[i]);
      }
 
+     // false: already joined; true: joined succuessfully
      bool join(int i, int j) {
          int rooti = find(i), rootj = find(j);
          if (rooti == rootj) { return false; }
