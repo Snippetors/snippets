@@ -19,8 +19,6 @@ jobs:
         node: ["14"]
 
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
 
     steps:
       - name: Input Validation
