@@ -1,3 +1,12 @@
+## [0.1.1](https://github.com/Snippetors/snippets/compare/v0.1.0...v0.1.1) (2022-01-23)
+
+
+### Features
+
+* **plugin:code-copy:** avoid polluting global namespace ([895bafc](https://github.com/Snippetors/snippets/commit/895bafc478b5d983ad6a6ef0fbf1d88aec72bbbf))
+
+
+
 # [0.1.0](https://github.com/Snippetors/snippets/compare/v0.0.6...v0.1.0) (2021-09-20)
 
 
