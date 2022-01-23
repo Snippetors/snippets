@@ -1,5 +1,5 @@
-#ifndef SRC_DATA_STRUCTURE_UNION_FIND_HPP_
-#define SRC_DATA_STRUCTURE_UNION_FIND_HPP_
+#ifndef SRC_DATA_STRUCTURE_UNIONFIND_HPP_
+#define SRC_DATA_STRUCTURE_UNIONFIND_HPP_
 
 #include <iostream>
 #include <vector>
@@ -12,7 +12,7 @@ class UnionFind {
      vector<int> rank;
 
  public:
-     UnionFind(int n) {
+     explicit UnionFind(int n) {
          root.resize(n);
          rank.resize(n, 0);
          for (int i = 0; i < n; ++i) {
@@ -31,11 +31,9 @@ class UnionFind {
 
          if (rank[rooti] > rank[rootj]) {
              root[rootj] = rooti;
-         }
-         else if (rank[rooti] < rank[rootj]) {
+         } else if (rank[rooti] < rank[rootj]) {
              root[rooti] = rootj;
-         }
-         else {
+         } else {
              root[rooti] = rootj;
              rank[rootj]++;
          }
@@ -43,4 +41,4 @@ class UnionFind {
      }
 };
 
-#endif  //  SRC_DATA_STRUCTURE_UNION_FIND_HPP_
+#endif  //  SRC_DATA_STRUCTURE_UNIONFIND_HPP_
