@@ -1,0 +1,50 @@
+name: Release Plugin
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Increment "major", "minor", "patch", or "pre*" version; or specify version [default: "patch"]'
+        default: patch
+        required: false
+      plugin:
+        description: 'Plugin, "tabs" or "code-copy"'
+        required: true
+
+
+jobs:
+  release_it:
+    strategy:
+      matrix:
+        node: ["14"]
+
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Input Validation
+        run: |
+          if [[ ! " tabs code-copy " =~ " ${{ github.event.inputs.plugin }} " ]]; then
+              echo "The plugin must be one of [tabs, code-copy]"
+              exit -1
+          fi
+
+      - name: Check out the repo
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Use Node.js ${{ matrix.node }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node }}
+
+      - name: Install release-it
+        run: npm install --global release-it
+
+      - name: Release
+        working-directory: packages/@snippetors/vuepress-plugin-${{ github.event.inputs.plugin }}
+        run: release-it -- ${{ github.event.inputs.tag }} --ci
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
