@@ -4,7 +4,7 @@
 
 ::: tab cpp
 
-@[code{4-42} cpp](@snippets/cpp/src/data_structure/unionFind.hpp)
+@[code{4-43} cpp](@snippets/cpp/src/data_structure/unionFind.hpp)
 
 :::
 
