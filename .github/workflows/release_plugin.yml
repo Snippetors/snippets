@@ -44,6 +44,11 @@ jobs:
       - name: Install release-it
         run: npm install --global release-it
 
+      - name: git config
+        run: |
+          git config user.name "${GITHUB_ACTOR}"
+          git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+
       - name: Release
         working-directory: packages/@snippetors/vuepress-plugin-${{ github.event.inputs.plugin }}
         run: release-it -- ${{ github.event.inputs.version }} --ci
