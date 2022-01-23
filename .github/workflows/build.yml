@@ -42,7 +42,7 @@ jobs:
 
       - name: Release
         id: release_tag
-        run: echo '::set-output name=IMAGE_TAG::$(npm version ${{ github.event.inputs.version }} | tail -1)'
+        run: echo "::set-output name=IMAGE_TAG::$(npm version ${{ github.event.inputs.version }} | tail -1)"
         env:
           GITHUB_TOKEN: ${{ secrets.BOT_ACCESS_TOKEN }}
 
