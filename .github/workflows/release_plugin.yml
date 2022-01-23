@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
     inputs:
       version:
-        description: 'Increment "major", "minor", "patch", or "pre*" version; or specify version [default: "patch"]'
+        description: 'Increment "major", "minor", "patch", or "pre*" version; or specify version'
         default: patch
-        required: false
+        required: true
       plugin:
         description: 'Plugin, "tabs" or "code-copy"'
         required: true
