@@ -22,7 +22,7 @@ class UnionFind {
 
      int find(int i) {
          if (root[i] == i) { return i; }
-         return root[i] = find(parent[i]);
+         return root[i] = find(root[i]);
      }
 
      bool join(int i, int j) {
