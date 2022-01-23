@@ -4,7 +4,7 @@
 
 ::: tab cpp
 
-@[code{4-44} cpp](@snippets/cpp/src/data_structure/unionFind.hpp)
+@[code{4-42} cpp](@snippets/cpp/src/data_structure/unionFind.hpp)
 
 :::
 
@@ -21,3 +21,5 @@
 :::
 
 ::::
+
+Union Find (or Disjoint Set Union) template with ***path compression*** and ***union by rank***.
