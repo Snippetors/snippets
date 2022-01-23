@@ -19,7 +19,7 @@
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
     "postinstall": "patch-package",
-    "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md && sed -i '' -E \"s/(badge\\.svg\\?branch=)[^\\)]*/\\1v$npm_package_version/g\" README.md && git add README.md",
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md && sed -i \"s/(badge\\.svg\\?branch=)[^\\)]*/\\1v$npm_package_version/g\" README.md && git add README.md",
     "postversion": "git push && git push origin v$npm_package_version && echo 'v$npm_package_version'"
   },
   "devDependencies": {
