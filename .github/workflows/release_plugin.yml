@@ -53,5 +53,5 @@ jobs:
         working-directory: packages/@snippetors/vuepress-plugin-${{ github.event.inputs.plugin }}
         run: release-it -- ${{ github.event.inputs.version }} --ci
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN_ACTION }}
+          GITHUB_TOKEN: ${{ secrets.ACTION_GITHUB_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
