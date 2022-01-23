@@ -36,15 +36,17 @@ jobs:
           fetch-depth: 0
 
       - name: Use Node.js ${{ matrix.node }}
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node }}
+          registry-url: 'https://registry.npmjs.org'
 
       - name: Install release-it
         run: npm install --global release-it
 
       - name: Release
         working-directory: packages/@snippetors/vuepress-plugin-${{ github.event.inputs.plugin }}
-        run: release-it -- ${{ github.event.inputs.tag }} --ci
+        run: release-it -- ${{ github.event.inputs.version }} --ci
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
