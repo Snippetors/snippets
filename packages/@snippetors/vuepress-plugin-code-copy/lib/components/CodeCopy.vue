@@ -125,7 +125,7 @@ svg {
   right: 7.5px;
   opacity: 0.75;
   cursor: pointer;
-  z-index: 9999;
+  z-index: 19;
 }
 
 svg.hover {
