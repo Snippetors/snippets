@@ -416,7 +416,7 @@
     vue "^3.2.3"
     vue-router "^4.0.10"
 
-"@vuepress/plugin-back-to-top@2.0.0-beta.25", "@vuepress/plugin-back-to-top@^2.0.0-beta.25":
+"@vuepress/plugin-back-to-top@2.0.0-beta.25":
   version "2.0.0-beta.25"
   resolved "https://registry.yarnpkg.com/@vuepress/plugin-back-to-top/-/plugin-back-to-top-2.0.0-beta.25.tgz#bdb2bbaafa17927775f0bb0c86626ca30113287d"
   integrity sha512-i4Ka0NqkuYUAlMIQga2zPbKWBEDt1BMqLAGbNDycUl0RB7pNLiXJwXwQxvWPU6ejOxQsKjvsHgV7AUA0DaVx4Q==
@@ -3687,7 +3687,7 @@ vue@^3.2.3:
     "@vue/runtime-dom" "3.2.11"
     "@vue/shared" "3.2.11"
 
-vuepress@^2.0.0-beta.25:
+vuepress@2.0.0-beta.25:
   version "2.0.0-beta.25"
   resolved "https://registry.yarnpkg.com/vuepress/-/vuepress-2.0.0-beta.25.tgz#a99e84c4de019f48901c9837ac57d492ddc1a968"
   integrity sha512-E1/Jeb96K5bBhOcQ6ijXPi1v7XvvXgjIgK1y7UpNUHUhv115HBi9BIMc5AssLB1zDSL/zWlroVj+nk7RkJZ5Ig==

@@ -6,6 +6,8 @@
 
 This plugin is inspired by [vuepress-plugin-code-copy](https://github.com/znicholasbrown/vuepress-plugin-code-copy), but for Vue 3.x and VuePress 2.x
 
+==VuePress is evolving rapidly, and there's no stable version yet. This plugin is only tested with VuePress version 2.0.0-beta.25==
+
 ## Documentation
 
 https://snippetors.github.io/plugins/vuepress-plugin-code-copy
