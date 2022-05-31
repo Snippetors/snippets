@@ -23,11 +23,11 @@
     "postversion": "git push && git push origin v$npm_package_version && echo v$npm_package_version"
   },
   "devDependencies": {
-    "@vuepress/plugin-back-to-top": "^2.0.0-beta.25",
+    "@vuepress/plugin-back-to-top": "2.0.0-beta.25",
     "markdown-it-pangu": "^1.0.2",
     "patch-package": "^6.4.7",
     "postinstall-postinstall": "^2.1.0",
-    "vuepress": "^2.0.0-beta.25"
+    "vuepress": "2.0.0-beta.25"
   },
   "dependencies": {}
 }

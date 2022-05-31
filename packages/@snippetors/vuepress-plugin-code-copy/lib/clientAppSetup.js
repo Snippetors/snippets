@@ -34,7 +34,7 @@ export default defineClientAppSetup(() => {
 
           el.classList.add("code-copy-added");
         });
-    }, 100);
+    }, 500); // should be greater than the page transition duration https://github.com/vuepress/vuepress-next/blob/13ab3906728a8356402c91d8ecdf61152b842d8e/packages/%40vuepress/theme-default/src/client/styles/transitions.scss#L12-L17
   };
 
   onMounted(() => {
