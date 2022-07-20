@@ -15,6 +15,5 @@ module.exports = (options = {}, app) => ({
   },
   name: "@snippetors/vuepress-plugin-code-copy",
   multiple: false,
-  clientAppEnhanceFiles: path.resolve(__dirname, "./client.js"),
-  clientAppSetupFiles: path.resolve(__dirname, "./clientAppSetup.js"),
+  clientConfigFile: path.resolve(__dirname, "./client.js"),
 });
