@@ -52,10 +52,7 @@ jobs:
       - name: Replace vuepress by vuepress-vite
         run: |
           yarn remove -W vuepress
-          yarn add -D -W vuepress-vite@2.0.0-beta.36
-          # todo this should be replaced with vuepress-vite@next after the migration of plugins
+          yarn add -D -W vuepress-vite@next
 
       - name: Build by Vite
-        run:
-          yarn build
-
+        run: yarn build
