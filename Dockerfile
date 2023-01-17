@@ -1,4 +1,4 @@
-FROM node:14.17.6-alpine as builder
+FROM node:16-alpine as builder
 WORKDIR /app
 COPY . .
 RUN apk add --no-cache git && yarn install --silent && yarn build
