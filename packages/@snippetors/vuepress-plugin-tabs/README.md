@@ -6,7 +6,7 @@
 
 This plugin is inspired by [vuepress-plugin-element-tabs](https://github.com/superbiger/vuepress-plugin-tabs), but for Vue 3.x and VuePress 2.x
 
-<mark>VuePress is evolving rapidly, and there's no stable version yet. This plugin is only tested with VuePress version 2.0.0-beta.49</mark>
+<mark>VuePress is evolving rapidly, and there's no stable version yet. This plugin is only tested with VuePress version 2.0.0-beta.60</mark>
 
 ## Documentation
 
