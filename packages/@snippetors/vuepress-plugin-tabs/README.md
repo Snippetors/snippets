@@ -22,9 +22,13 @@ yarn add -D @snippetors/vuepress-plugin-tabs
 
 ```js
 // .vuepress/config.js
-module.exports = {
-  plugins: ["@snippetors/vuepress-plugin-tabs"],
-};
+import tabsPlugin from '@snippetors/vuepress-plugin-tabs'
+
+export default {
+  plugins: [
+    tabsPlugin(options),
+  ],
+}
 ```
 
 ## License

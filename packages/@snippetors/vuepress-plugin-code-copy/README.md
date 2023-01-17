@@ -22,9 +22,13 @@ yarn add -D @snippetors/vuepress-plugin-code-copy
 
 ```js
 // .vuepress/config.js
-module.exports = {
-  plugins: ["@snippetors/vuepress-plugin-code-copy", options],
-};
+import codeCopyPlugin from '@snippetors/vuepress-plugin-code-copy'
+
+export default {
+  plugins: [
+    codeCopyPlugin(options),
+  ],
+}
 ```
 
 ## License
