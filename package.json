@@ -13,7 +13,7 @@
   "author": "Snippetors",
   "license": "MIT",
   "engines": {
-    "node": ">=14"
+    "node": ">=16"
   },
   "scripts": {
     "dev": "vuepress dev docs",

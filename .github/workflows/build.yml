@@ -13,7 +13,7 @@ jobs:
     name: Release, Build, and Push Docker image to GitHub Packages
     strategy:
       matrix:
-        node: ["14"]
+        node: ["16"]
 
     runs-on: ubuntu-latest
     permissions:
