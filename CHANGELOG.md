@@ -1,3 +1,14 @@
+## [0.1.4](https://github.com/Snippetors/snippets/compare/v0.1.3...v0.1.4) (2023-01-17)
+
+
+### Bug Fixes
+
+* **plugin:code-copy:** set query selector delay greater than theme page transition duration (close [#52](https://github.com/Snippetors/snippets/issues/52)) ([#57](https://github.com/Snippetors/snippets/issues/57)) ([55b9449](https://github.com/Snippetors/snippets/commit/55b9449adc9c18f62589bb33b5210673d9b4e2a6))
+* **plugin:tabs:** fix division out of calc, fix Snippetors/snippetors.github.io[#1](https://github.com/Snippetors/snippets/issues/1) ([bf00b6f](https://github.com/Snippetors/snippets/commit/bf00b6fa8bbd5cb9b657d2adea378e4c71defbfd))
+* **plugin:** update vuepress version to v2.0.0-beta49 ([#59](https://github.com/Snippetors/snippets/issues/59)) ([974a881](https://github.com/Snippetors/snippets/commit/974a88114e63303fe548f76c9f3b8f5059a36842))
+
+
+
 ## [0.1.3](https://github.com/Snippetors/snippets/compare/v0.1.2...v0.1.3) (2022-01-23)
 
 

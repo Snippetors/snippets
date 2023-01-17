@@ -4,7 +4,7 @@
     "packages/@snippetors/*"
   ],
   "name": "snippets",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "code snippets, copy & run",
   "repository": {
     "type": "git",
