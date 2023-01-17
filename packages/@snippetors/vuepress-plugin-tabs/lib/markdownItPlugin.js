@@ -1,6 +1,6 @@
-const container = require("markdown-it-container");
+import container from 'markdown-it-container'
 
-module.exports = (options) => {
+export const markdownItPlugin = (options) => {
   const events = options.events || [];
   const eventsAttr = "[" + events.map((e) => `'${e}'`).join(",") + "]";
   const tabsPlugin = (md, app) => {
