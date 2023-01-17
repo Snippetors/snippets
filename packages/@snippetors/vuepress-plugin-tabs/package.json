@@ -25,6 +25,7 @@
   "homepage": "https://snippetors.github.io/plugins/vuepress-plugin-tabs",
   "author": "Snippetors",
   "license": "MIT",
+  "type": "module",
   "publishConfig": {
     "access": "public"
   },
